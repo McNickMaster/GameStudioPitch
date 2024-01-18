@@ -35,6 +35,5 @@ public class ScreenManager : MonoBehaviour
 
 public enum Panels
 {
-	OVERVIEW, LEFT_CIRCLE, MIDDLE_CIRCLE, RIGHT_CIRCLE, PASSCODE_1
-
+	CLASS_1, CLASS_2, CLASS_BOARD, CLASS_CLOCK, CLASS_DOOR
 }
