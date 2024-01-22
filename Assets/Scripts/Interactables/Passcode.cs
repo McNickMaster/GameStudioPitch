@@ -8,6 +8,8 @@ public class Passcode : MonoBehaviour
     public string passkey = "1001";
     public TMP_InputField passcodeText;
 
+    public bool unlocked = false;
+
     private int one = 0, two = 0, three = 0, four = 0;
     
     // Start is called before the first frame update
@@ -51,6 +53,7 @@ public class Passcode : MonoBehaviour
     {
         if(passcodeText.text.Equals(passkey))
         {
+            unlocked = true;
             Debug.Log("Yippie!");
         }
     }

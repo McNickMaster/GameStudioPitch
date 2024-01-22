@@ -30,10 +30,12 @@ public class ScreenManager : MonoBehaviour
 
 		Debug.Log("panel has been swapped");
 	}
+
+	
 }
 
 
 public enum Panels
 {
-	CLASS_1, CLASS_2, CLASS_BOARD, CLASS_CLOCK, CLASS_DOOR
+	CLASS_1, CLASS_2, CLASS_BOARD, CLASS_CLOCK, CLASS_DOOR, CLASS_3, CLASS_GRID
 }
