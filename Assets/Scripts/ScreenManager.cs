@@ -28,7 +28,7 @@ public class ScreenManager : MonoBehaviour
 		currentScreen = screens[(int)panel.myPanel];
 		currentScreen.SetActive(true);
 
-		Debug.Log("panel has been swapped");
+		//Debug.Log("panel has been swapped");
 	}
 
 	

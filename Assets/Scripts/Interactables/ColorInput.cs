@@ -37,16 +37,6 @@ public class ColorInput : MonoBehaviour
         {
             for(int i = 0; i < key.Count; i++)
             {
-                /*
-                if(IsColorEqualTo(key[i], input[i]))
-                {
-                    Debug.Log("true");
-                } else 
-                {
-                    Debug.Log("false");
-                    //flag = false;
-                }
-                */
                 if(key[i].Equals(input[i]))
                 {
                     Debug.Log("true");
