@@ -28,6 +28,7 @@ public class Inventory : MonoBehaviour
     {
         inventory.Add(item.item);
         inventoryUISlots[inventory.IndexOf(item.item)].sprite = item.itemImage;
+        inventoryUISlots[inventory.IndexOf(item.item)].transform.GetChild(0).GetComponent<Image>().sprite = item.itemImage;
     }
     void Remove(ItemName item)
     {

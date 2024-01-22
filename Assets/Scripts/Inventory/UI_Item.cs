@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class UI_Item : MonoBehaviour
 {
-    public ItemName item;
-    public GameObject baseItem;
+    public ItemInfo info;
+    public GameObject grabbableItem;
+
+    private bool grabbed;
 
 
     // Start is called before the first frame update
@@ -18,14 +20,24 @@ public class UI_Item : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(grabbed)
+        {
+            grabbableItem.transform.position = CalcMousePos();
+
+        } else 
+        {
+            grabbableItem.transform.localPosition = Vector3.zero;
+        }
     }
 
     public void GrabItem()
     {
-        ItemInfo info = GetComponent<ItemInfo>();
-        GameObject newItem = Instantiate(baseItem, CalcMousePos(), Quaternion.identity);
-        newItem.GetComponent<Image>().sprite = info.itemImage;
+        
+    }
+
+    public void ToggleGrab()
+    {
+        grabbed = !grabbed;
     }
 
 
